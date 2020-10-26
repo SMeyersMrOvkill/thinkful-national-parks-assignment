@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks Search</title>
+</head>
+<body>
+    <div class="main">
+        <form>
+            <div class="form-group">
+                <label for="states">States (Comma-Separated List): </label>
+                <input name="states" id="states" type="text" placeholder="KS,MO,AR">
+            </div>
+            <div class="form-group">
+                <label for="number">Number of search results</label>
+                <input name="number" type="number" id="number" value="10" placeholder="10">
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <div class="data"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
