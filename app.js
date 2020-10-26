@@ -1,9 +1,13 @@
 import api from './api.js';
 
 function renderApiResponse(data) {
-    $('.data').append(`<h1>${data.fullName}</h1>
+    $('.data').append(`<br />
+    <div class="item">
+    <h1>${data.fullName}</h1>
     <a href="${data.url}">Link to ${data.fullName}'s URL</a>
-    <p>${data.description}</p>`);
+    <p>${data.description}</p>
+    </div>
+    <br />`);
 }
 
 function apiServiceSubmit(url) {
